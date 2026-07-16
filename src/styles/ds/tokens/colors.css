@@ -1,0 +1,57 @@
+/* ===========================================================================
+   Colors — Valeria Fil Portfolio Design System
+   ---------------------------------------------------------------------------
+   The portfolio's signature is the magenta→pink gradient (buttons, icon
+   badges, paperclip callouts, tags). Each landing section carries its own
+   vivid heading accent — sky blue, forest green, electric purple — over a
+   clean white canvas with soft, low-contrast card shadows.
+   =========================================================================== */
+
+:root {
+  /* ---- Neutrals / ink ---- */
+  --color-ink:            #0F0E0E;   /* primary text */
+  --color-ink-900:        #1A1A1A;   /* near-black text */
+  --color-black:          #000000;
+  --color-ink-muted:      #808080;   /* secondary / meta text */
+  --color-line:           #EFEFEF;   /* hairline borders, dividers */
+  --color-placeholder:    #D9D9D9;   /* empty media / avatar placeholder */
+  --color-white:          #FFFFFF;
+
+  /* ---- Surfaces ---- */
+  --color-surface:        #FFFFFF;   /* page + card background */
+  --color-surface-soft:   #F5F5F5;   /* subtle raised panel */
+  --color-surface-mint:   #F1F6F4;   /* faint green-tinted panel */
+  --color-surface-pink:   #FDE0E7;   /* faint pink callout panel */
+
+  /* ---- Brand pink / magenta (signature) ---- */
+  --color-pink:           #FD1556;   /* primary brand pink */
+  --color-pink-deep:      #BF154C;   /* gradient start / pressed */
+  --color-pink-rose:      #DA2255;   /* stroke / mid */
+  --gradient-pink:        linear-gradient(180deg, #BF154C -33.78%, #FD1556 128.38%); /* @kind color */
+
+  /* ---- Section accents ---- */
+  --color-blue:           #009EE7;   /* hero "UX/UI DESIGNER" */
+  --color-blue-deep:      #0068A4;   /* "RESENT PROJECTS" */
+  --color-blue-link:      #0277B5;   /* inline links / breadcrumb meta */
+  --color-blue-soft:      #67A2F9;   /* light blue UI accent */
+  --color-green:          #034C3B;   /* Career / About headings, job titles (Green 500) */
+  --color-green-400:      #2D6D5C;   /* mid green */
+  --color-green-200:      #CCE0DB;   /* pale green tint */
+  --color-purple:         #6400E7;   /* "UX/UI PROJECTS" */
+  --color-amber:          #FF9A00;   /* occasional warm highlight */
+
+  /* ---- Semantic aliases ---- */
+  --text-primary:         var(--color-ink);
+  --text-heading:         var(--color-ink-900);
+  --text-muted:           var(--color-ink-muted);
+  --text-on-accent:       var(--color-white);
+  --text-link:            var(--color-blue-link);
+
+  --surface-page:         var(--color-surface);
+  --surface-card:         var(--color-white);
+  --surface-callout:      var(--color-surface-pink);
+
+  --border-card:          var(--color-line);
+  --accent-primary:       var(--color-pink);
+  --accent-primary-grad:  var(--gradient-pink);
+}

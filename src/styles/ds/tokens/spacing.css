@@ -1,0 +1,35 @@
+/* ===========================================================================
+   Spacing — Valeria Fil Portfolio Design System
+   ---------------------------------------------------------------------------
+   A roomy, white-space-forward rhythm. Cards pad 26–40px; sections breathe
+   with 45–100px gaps. Base unit is loosely 4px but the system favours a small
+   set of named steps that match the Figma layout grid.
+   =========================================================================== */
+
+:root {
+  /* ---- Spacing steps ---- */
+  --space-2:   2px;
+  --space-4:   4px;
+  --space-8:   8px;
+  --space-10:  10px;   /* default in-card gap */
+  --space-16:  16px;   /* stack gap between body lines */
+  --space-20:  20px;
+  --space-22:  22px;
+  --space-26:  26px;   /* card inner padding */
+  --space-32:  32px;
+  --space-40:  40px;   /* card padding / block gap */
+  --space-46:  46px;
+  --space-55:  55px;
+  --space-64:  64px;
+  --space-76:  76px;
+  --space-93:  93px;
+  --space-100: 100px;  /* major section rhythm */
+
+  /* ---- Semantic ---- */
+  --gap-card:        var(--space-10);
+  --pad-card:        var(--space-26);
+  --pad-card-lg:     var(--space-40);
+  --gap-section:     var(--space-100);
+  --content-max:     1149px;  /* portfolio content column */
+  --page-margin:     147px;   /* desktop side margin at 1440 */
+}

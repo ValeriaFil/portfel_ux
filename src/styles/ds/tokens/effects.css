@@ -1,0 +1,32 @@
+/* ===========================================================================
+   Effects — Valeria Fil Portfolio Design System
+   ---------------------------------------------------------------------------
+   One soft, diffuse card shadow does most of the work. Corners are gently
+   rounded (10px) on cards; buttons are full pills. Motion is subtle: short
+   ease-out fades and small lifts, never bouncy.
+   =========================================================================== */
+
+:root {
+  /* ---- Radii ---- */
+  --radius-sm:   10px;    /* cards, inputs, media */
+  --radius-md:   16px;    /* icon badges */
+  --radius-pill: 112px;   /* buttons, flow steps, tags */
+  --radius-full: 9999px;  /* avatars, circular badges */
+
+  /* ---- Shadows ---- */
+  --shadow-card:  2px 2px 20px 0px rgba(10, 10, 10, 0.10); /* signature card shadow */
+  --shadow-soft:  0px 2px 12px 0px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 2px 6px 28px 0px rgba(10, 10, 10, 0.14); /* card lift on hover */
+
+  /* ---- Borders ---- */
+  --border-hairline: 1px solid var(--color-line);
+  --border-pill:     1px solid var(--color-pink);
+
+  /* ---- Motion ---- */
+  --ease-out:    cubic-bezier(0.22, 0.61, 0.36, 1);  /* @kind other */
+  --ease-inout:  cubic-bezier(0.45, 0, 0.2, 1);      /* @kind other */
+  --dur-fast:    140ms;  /* @kind other */
+  --dur-base:    220ms;  /* @kind other */
+  --dur-slow:    360ms;  /* @kind other */
+  --motion-lift: translateY(-3px);  /* @kind other */
+}

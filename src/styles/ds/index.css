@@ -1,0 +1,12 @@
+/* ===========================================================================
+   Valeria Fil Portfolio Design System — entry point (verbatim tokens)
+   Import order matters: fonts → colors → typography → spacing → effects → base.
+   These files are copied unchanged from the design-system handoff bundle.
+   =========================================================================== */
+
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/effects.css";
+@import "./tokens/base.css";

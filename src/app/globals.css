@@ -1,0 +1,119 @@
+/* Design-system tokens + base (source of truth for brand color/type/space) */
+@import "../styles/ds/index.css";
+/* Rubik italic (for the hero emphasis word) + a monospace for editorial meta labels */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600;700&display=swap');
+
+/* ---------------------------------------------------------------------------
+   Editorial redesign layer — inspired by an editorial reference, expressed in
+   Valeria's brand. New stylistic variables live here so the DS token files stay
+   pristine. Accents, tints and fonts all resolve to brand tokens.
+   --------------------------------------------------------------------------- */
+:root {
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --canvas: #FBFBF9;                      /* soft warm off-white */
+  --tint-pink: var(--color-surface-pink); /* #FDE0E7 */
+  --tint-mint: var(--color-surface-mint); /* #F1F6F4 */
+  --tint-sage: var(--color-green-200);    /* #CCE0DB */
+  --hair: rgba(15, 14, 14, 0.12);
+  --hair-line: 1px solid var(--hair);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* Anchored sections clear the sticky 64px header on smooth-scroll */
+section[id] { scroll-margin-top: 84px; }
+
+/* Playful Polaroid cards (About “side projects”) — straighten & lift on hover */
+.polaroid { transition: transform 0.28s cubic-bezier(.22,.61,.36,1), box-shadow 0.28s; }
+.polaroid:hover {
+  transform: rotate(0deg) translateY(-6px) scale(1.03) !important;
+  box-shadow: 0 18px 44px rgba(10, 10, 10, 0.18);
+  z-index: 2;
+}
+
+/* Smooth page transition on route change */
+.np-card {
+  transition: box-shadow var(--dur-base) var(--ease-out),
+    transform var(--dur-base) var(--ease-out);
+}
+.np-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.page-transition { animation: vf-page-in 340ms cubic-bezier(0.22, 0.61, 0.36, 1); }
+@keyframes vf-page-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Wide editorial container */
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 40px;
+}
+
+/* Monospace meta label / eyebrow */
+.mono {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-pink-rose);
+}
+
+.hair { border: 0; border-top: var(--hair-line); margin: 0; }
+
+/* Section rhythm */
+.section { padding-block: 96px; }
+.section--tight { padding-block: 64px; }
+.section + .section { border-top: var(--hair-line); }
+
+/* Big editorial statement (brand display font, not serif) */
+.statement {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(40px, 5.2vw, 68px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+  margin: 0;
+}
+.statement .accent { color: var(--color-green); font-style: italic; font-weight: 500; }
+.statement .dot { color: var(--color-pink-rose); }
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .wrap { padding-inline: 24px; }
+  .section { padding-block: 64px; }
+  .hero-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+  .work-grid { grid-template-columns: 1fr !important; }
+  .work-grid .work-tile--wide { grid-column: auto !important; }
+  .tl-row { grid-template-columns: 84px 1fr !important; }
+  .tl-row__role { display: none !important; }
+  .career-row { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .cs-2, .cs-3 { grid-template-columns: 1fr !important; }
+  .cs-4 { grid-template-columns: 1fr 1fr !important; }
+  .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+}

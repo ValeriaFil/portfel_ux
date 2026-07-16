@@ -1,0 +1,11 @@
+/* ===========================================================================
+   Fonts — Valeria Fil Portfolio Design System
+   ---------------------------------------------------------------------------
+   The .fig file specifies Rubik (display), Roboto (body) and Poppins (button
+   label). All three are Google Fonts, so they are loaded from the Google Fonts
+   CDN rather than self-hosted binaries. If you need fully offline/self-hosted
+   webfonts, drop the .woff2 files into assets/fonts/ and replace this @import
+   with @font-face rules.
+   =========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Poppins:wght@500;600&display=swap');

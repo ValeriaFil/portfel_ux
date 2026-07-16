@@ -1,0 +1,39 @@
+/* ===========================================================================
+   Base — light resets + element defaults for the portfolio brand.
+   Scoped lightly so specimen cards and UI kits inherit sane defaults.
+   =========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--text-primary);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  margin: 0;
+  line-height: var(--lh-snug);
+}
+
+p { margin: 0; }
+
+a { color: var(--text-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { display: block; max-width: 100%; }
+
+/* Utility: the recurring uppercase display heading */
+.vf-display {
+  font-family: var(--font-display);
+  font-weight: var(--weight-extrabold);
+  text-transform: uppercase;
+  line-height: var(--lh-tight);
+}
