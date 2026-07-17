@@ -21,8 +21,28 @@ header{position:sticky;top:0;z-index:9;background:var(--cv);border-bottom:1px so
 .combo figure{margin:0;text-align:center;}.combo img{height:150px;width:auto;filter:drop-shadow(0 12px 26px rgba(3,76,59,.20));}
 .op{font-family:var(--fd);font-weight:500;font-size:26px;color:var(--mut);}
 @media(max-width:900px){.wrap{padding:0 24px;}.cs2,.cs3,.cs2b{grid-template-columns:1fr!important;}.combo img{height:104px;}}
+/* injected-mobile */
+.burger{display:none;}
+@media(max-width:900px){ .polas{justify-content:center;} }
+@media(max-width:760px){
+ .hd nav{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--cv,#FBFBF9);border-bottom:1px solid var(--hair);padding:8px 24px 20px;display:none;z-index:20;}
+ header.nav-open .hd nav{display:flex;}
+ .hd nav a{padding:13px 0;font-size:14px;}
+ .burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:8px;margin:-8px;cursor:pointer;}
+ .burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s;}
+ header.nav-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+ header.nav-open .burger span:nth-child(2){opacity:0;}
+ header.nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+}
+@media(max-width:640px){
+ .chero{aspect-ratio:1/1 !important;}
+ .chero .pmwrap>div{flex-shrink:0 !important;}
+ .chero.chero--four .pmwrap>div{height:56% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(2),.chero.chero--four .pmwrap>div:nth-child(4){height:62% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(3){height:70% !important;}
+}
 </style></head><body>
-<header><div class="hd wrap"><a href="preview.html"><span class="mono" style="color:var(--ink);letter-spacing:.06em">Valeria Filipchyk</span></a><nav><a class="mono" href="portfolio-preview.html" style="color:var(--rose)">Portfolio</a><a class="mono" href="preview.html#career" style="color:var(--ink)">Career</a><a class="mono" href="preview.html#about" style="color:var(--ink)">About</a><a class="mono" href="preview.html#contact" style="color:var(--ink)">Contact</a><a class="mono" href="public/resume.pdf" target="_blank" style="color:var(--ink)">Resume</a></nav></div></header>
+<header><div class="hd wrap"><a href="preview.html"><span class="mono" style="color:var(--ink);letter-spacing:.06em">Valeria Filipchyk</span></a><button class="burger" aria-label="Menu" aria-expanded="false" onclick="var h=this.closest('header');var o=h.classList.toggle('nav-open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button><nav onclick="this.closest('header').classList.remove('nav-open')"><a class="mono" href="portfolio-preview.html" style="color:var(--rose)">Portfolio</a><a class="mono" href="preview.html#career" style="color:var(--ink)">Career</a><a class="mono" href="preview.html#about" style="color:var(--ink)">About</a><a class="mono" href="preview.html#contact" style="color:var(--ink)">Contact</a><a class="mono" href="public/valeria_filipchyk_designer.pdf" target="_blank" style="color:var(--ink)">Resume</a></nav></div></header>
 <main>
 <section class="section" style="padding-top:48px;padding-bottom:64px"><div class="wrap">
 <a class="mono" href="portfolio-preview.html" style="color:var(--ink);display:inline-block;margin-bottom:40px">← Back to Projects</a>
@@ -41,7 +61,7 @@ header{position:sticky;top:0;z-index:9;background:var(--cv);border-bottom:1px so
 <img src="public/assets/img/wc-shelter.png" style="height:64%;width:auto;transform:rotate(6deg);margin-left:-40px;filter:drop-shadow(0 18px 38px rgba(3,76,59,.26));z-index:2">
 <img src="public/assets/img/wc-forest.png" style="height:56%;width:auto;transform:rotate(12deg);margin-left:-40px;filter:drop-shadow(0 16px 34px rgba(3,76,59,.24));z-index:1">
 </div></div>
-<div style="display:grid;grid-template-columns:300px 1fr;gap:72px;margin-top:56px;align-items:start" class="cs2b"><div><div><p class="mono" style="margin-bottom:10px">Role</p><p class="body">Game &amp; UX/UI Designer</p></div><div style="margin-top:32px"><p class="mono" style="margin-bottom:10px">Type</p><p class="body">Mobile card game — commercial (under NDA)</p></div><div style="margin-top:32px"><p class="mono" style="margin-bottom:10px">Scope</p><p class="body">Mechanics · rules · UI · visual direction</p></div></div><div><p class="mono" style="margin-bottom:16px">About the project</p><p class="body" style="max-width:640px">Woodland Cards is a real commercial mobile card game I designed end to end. Because the project is under NDA, the visuals and some details shown here have been changed or recreated specifically for this portfolio. It was built around an original gameplay system: the brief was to design a game from scratch on a given woodland theme and adapt it for mobile — rules simple enough to learn in minutes, yet with meaningful strategic decisions in every match.</p></div></div></div></section>
+<div style="display:grid;grid-template-columns:300px 1fr;gap:72px;margin-top:56px;align-items:start" class="cs2b"><div><div><p class="mono" style="margin-bottom:10px">Role</p><p class="body">Game &amp; UI/UX Designer</p></div><div style="margin-top:32px"><p class="mono" style="margin-bottom:10px">Type</p><p class="body">Mobile card game — commercial (under NDA)</p></div><div style="margin-top:32px"><p class="mono" style="margin-bottom:10px">Scope</p><p class="body">Mechanics · rules · UI · visual direction</p></div></div><div><p class="mono" style="margin-bottom:16px">About the project</p><p class="body" style="max-width:640px">Woodland Cards is a real commercial mobile card game I designed end to end. Because the project is under NDA, the visuals and some details shown here have been changed or recreated specifically for this portfolio. It was built around an original gameplay system: the brief was to design a game from scratch on a given woodland theme and adapt it for mobile — rules simple enough to learn in minutes, yet with meaningful strategic decisions in every match.</p></div></div></div></section>
 
 <section class="section"><div class="wrap"><p class="kick">The Challenge</p>
 <div class="cs2" style="gap:24px;margin-top:8px">
@@ -160,5 +180,5 @@ header{position:sticky;top:0;z-index:9;background:var(--cv);border-bottom:1px so
 
 <section class="section"><div class="wrap"><p class="kick" style="margin-bottom:24px">Next project</p><a class="np" href="movienest-preview.html" style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;background:#fff;border:1px solid var(--hair);padding:48px"><div><span class="mono" style="color:var(--green)">Booking app</span><p style="font-family:var(--fd);font-weight:600;font-size:clamp(28px,3.4vw,44px);line-height:1.05;margin-top:10px">Booking app «MovieNest»</p></div><span style="font-family:var(--fm);font-size:26px;color:var(--rose)">↗</span></a></div></section>
 </main>
-<footer style="border-top:1px solid var(--hair)"><div class="wrap" style="height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap"><span class="mono" style="color:var(--ink)">Valeria Filipchyk</span><span class="mono">© 2026 — UX/UI Designer</span><a class="mono" href="#" style="color:var(--ink)">Back to top ↑</a></div></footer>
+<footer style="border-top:1px solid var(--hair)"><div class="wrap" style="height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap"><span class="mono" style="color:var(--ink)">Valeria Filipchyk</span><span class="mono">© 2026 — UI/UX Designer</span><a class="mono" href="#" style="color:var(--ink)">Back to top ↑</a></div></footer>
 </body></html>

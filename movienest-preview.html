@@ -17,24 +17,44 @@ header{position:sticky;top:0;z-index:9;background:var(--cv);border-bottom:1px so
 .b{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}.b li{display:grid;grid-template-columns:14px 1fr;gap:12px;font-family:var(--fb);font-size:15px;line-height:1.6;color:#3C3B3B;}.b .d{color:var(--rose);}
 .dot{display:grid;grid-template-columns:14px 1fr;gap:12px;font-family:var(--fb);font-size:15px;line-height:1.6;color:#3C3B3B;}.dot .d{color:var(--rose);}
 @media(max-width:900px){.wrap{padding:0 24px;}.cs2,.cs3,.cs2b{grid-template-columns:1fr!important;}.cs4{grid-template-columns:1fr 1fr!important;}}
+/* injected-mobile */
+.burger{display:none;}
+@media(max-width:900px){ .polas{justify-content:center;} }
+@media(max-width:760px){
+ .hd nav{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--cv,#FBFBF9);border-bottom:1px solid var(--hair);padding:8px 24px 20px;display:none;z-index:20;}
+ header.nav-open .hd nav{display:flex;}
+ .hd nav a{padding:13px 0;font-size:14px;}
+ .burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:8px;margin:-8px;cursor:pointer;}
+ .burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s;}
+ header.nav-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+ header.nav-open .burger span:nth-child(2){opacity:0;}
+ header.nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+}
+@media(max-width:640px){
+ .chero{aspect-ratio:1/1 !important;}
+ .chero .pmwrap>div{flex-shrink:0 !important;}
+ .chero.chero--four .pmwrap>div{height:56% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(2),.chero.chero--four .pmwrap>div:nth-child(4){height:62% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(3){height:70% !important;}
+}
 </style></head><body>
-<header><div class="hd wrap"><a href="preview.html"><span class="mono" style="color:var(--ink);letter-spacing:.06em">Valeria Filipchyk</span></a><nav><a class="mono" href="portfolio-preview.html" style="color:var(--rose)">Portfolio</a><a class="mono" href="preview.html#career" style="color:var(--ink)">Career</a><a class="mono" href="preview.html#about" style="color:var(--ink)">About</a><a class="mono" href="preview.html#contact" style="color:var(--ink)">Contact</a><a class="mono" href="public/resume.pdf" target="_blank" style="color:var(--ink)">Resume</a></nav></div></header>
+<header><div class="hd wrap"><a href="preview.html"><span class="mono" style="color:var(--ink);letter-spacing:.06em">Valeria Filipchyk</span></a><button class="burger" aria-label="Menu" aria-expanded="false" onclick="var h=this.closest('header');var o=h.classList.toggle('nav-open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button><nav onclick="this.closest('header').classList.remove('nav-open')"><a class="mono" href="portfolio-preview.html" style="color:var(--rose)">Portfolio</a><a class="mono" href="preview.html#career" style="color:var(--ink)">Career</a><a class="mono" href="preview.html#about" style="color:var(--ink)">About</a><a class="mono" href="preview.html#contact" style="color:var(--ink)">Contact</a><a class="mono" href="public/valeria_filipchyk_designer.pdf" target="_blank" style="color:var(--ink)">Resume</a></nav></div></header>
 <main>
 <section class="section" style="padding-top:48px;padding-bottom:64px"><div class="wrap">
 <a class="mono" href="portfolio-preview.html" style="color:var(--ink);display:inline-block;margin-bottom:40px">← Back to Projects</a>
 <div style="display:flex;flex-wrap:wrap;gap:16px;margin-bottom:22px"><span class="mono" style="color:var(--green)">#UIDesign</span><span class="mono" style="color:var(--green)">#UXDesign</span><span class="mono" style="color:var(--green)">#DesignThinking</span><span class="mono" style="color:var(--green)">#VisualDesign</span><span class="mono" style="color:var(--green)">#Collaboration</span></div>
 <h1 class="statement" style="font-size:clamp(40px,5.2vw,72px);max-width:900px">Mini-Case Task «MovieNest»</h1>
 <p class="mono" style="margin-top:16px">Booking app</p>
-<div style="margin-top:48px;position:relative;width:100%;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:radial-gradient(130% 150% at 80% 8%, #EAF0EE 0%, #F1F6F4 46%, #FBFBF9 100%)">
+<div class="chero" style="margin-top:48px;position:relative;width:100%;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:radial-gradient(130% 150% at 80% 8%, #EAF0EE 0%, #F1F6F4 46%, #FBFBF9 100%)">
 <span class="mono" style="position:absolute;top:30px;left:34px;color:var(--green);z-index:5">Private movie-room booking</span>
 <span class="mono" style="position:absolute;bottom:30px;right:34px;color:var(--rose);z-index:5">Compare · Book · Confirm</span>
 <div style="position:absolute;right:44px;top:34px;width:110px;height:110px;border-radius:9999px;border:1px solid rgba(3,76,59,.20);z-index:1"></div>
-<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2">
+<div class="pmwrap" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2">
 <div style="height:74%;aspect-ratio:436/944;border-radius:30px;overflow:hidden;background:#fff;border:1px solid var(--hair);box-shadow:0 22px 50px rgba(3,76,59,.18);transform:rotate(-7deg);margin-right:-26px;z-index:1"><img src="https://framerusercontent.com/images/SMFYD501cgKnVnVhi1cGvFKTp94.png" style="width:100%;height:100%;object-fit:cover"></div>
 <div style="height:90%;aspect-ratio:436/944;border-radius:34px;overflow:hidden;background:#fff;border:1px solid var(--hair);box-shadow:0 30px 66px rgba(3,76,59,.24);z-index:3"><img src="https://framerusercontent.com/images/E78xzywaSx5is9pvKQTTiivgZVk.png" style="width:100%;height:100%;object-fit:cover"></div>
 <div style="height:74%;aspect-ratio:436/944;border-radius:30px;overflow:hidden;background:#fff;border:1px solid var(--hair);box-shadow:0 22px 50px rgba(3,76,59,.18);transform:rotate(7deg);margin-left:-26px;z-index:1"><img src="https://framerusercontent.com/images/Jf9HF81Mpw1usw59BZa0c7S26oQ.png" style="width:100%;height:100%;object-fit:cover"></div>
 </div></div>
-<div style="display:grid;grid-template-columns:300px 1fr;gap:72px;margin-top:56px;align-items:start" class="cs2b"><div><div><p class="mono" style="margin-bottom:10px">Role</p><p class="body">UX/UI Designer</p></div><div style="margin-top:32px"><p class="mono" style="margin-bottom:10px">Timeline</p><p class="body">Mini-case task · focused UX flow</p></div></div><div><p class="mono" style="margin-bottom:16px">About the project</p><p class="body" style="max-width:640px">MovieNest is an app for booking private movie rooms. While the overall concept is simple, one specific flow creates confusion and drop-off: users browsing room options struggle to understand what’s included, how to compare offers, and how to confidently start the booking — especially without calling the venue.</p></div></div></div></section>
+<div style="display:grid;grid-template-columns:300px 1fr;gap:72px;margin-top:56px;align-items:start" class="cs2b"><div><div><p class="mono" style="margin-bottom:10px">Role</p><p class="body">UI/UX Designer</p></div><div style="margin-top:32px"><p class="mono" style="margin-bottom:10px">Timeline</p><p class="body">Mini-case task · focused UX flow</p></div></div><div><p class="mono" style="margin-bottom:16px">About the project</p><p class="body" style="max-width:640px">MovieNest is an app for booking private movie rooms. While the overall concept is simple, one specific flow creates confusion and drop-off: users browsing room options struggle to understand what’s included, how to compare offers, and how to confidently start the booking — especially without calling the venue.</p></div></div></div></section>
 
 <section class="section"><div class="wrap"><p class="kick">The Problem</p><div class="cs2" style="gap:48px;align-items:start"><p class="statement" style="font-size:clamp(24px,2.6vw,32px);line-height:1.25">Booking private movie rooms is inconvenient due to unclear availability, pricing, and services<span style="color:var(--rose)">.</span></p><div><p class="body">Users struggle to find promotions and venue details, while younger users hesitate to book via phone.</p><p class="body" style="margin-top:20px">Instead of redesigning the full app, I focused on this exact moment where users hesitate. I wanted to solve it through structure, clarity, and better visual storytelling.</p></div></div></div></section>
 
@@ -80,5 +100,5 @@ header{position:sticky;top:0;z-index:9;background:var(--cv);border-bottom:1px so
 <section class="section"><div class="wrap"><p class="kick">Prototype</p><div style="position:relative;width:100%;aspect-ratio:16/9;background:#F0F6F4"><iframe src="https://www.youtube-nocookie.com/embed/XDvvTe43_oQ?start=1&rel=0" style="position:absolute;inset:0;width:100%;height:100%;border:none" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div></section>
 <section class="section"><div class="wrap"><p class="kick" style="margin-bottom:24px">Next project</p><a class="np" href="intentional-matching-preview.html" style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;background:#fff;border:1px solid var(--hair);padding:48px"><div><span class="mono" style="color:var(--green)">Dating app feature</span><p style="font-family:var(--fd);font-weight:600;font-size:clamp(28px,3.4vw,44px);line-height:1.05;margin-top:10px">Intentional Matching</p></div><span style="font-family:var(--fm);font-size:26px;color:var(--rose)">↗</span></a></div></section>
 </main>
-<footer style="border-top:1px solid var(--hair)"><div class="wrap" style="height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap"><span class="mono" style="color:var(--ink)">Valeria Filipchyk</span><span class="mono">© 2026 — UX/UI Designer</span><a class="mono" href="#" style="color:var(--ink)">Back to top ↑</a></div></footer>
+<footer style="border-top:1px solid var(--hair)"><div class="wrap" style="height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap"><span class="mono" style="color:var(--ink)">Valeria Filipchyk</span><span class="mono">© 2026 — UI/UX Designer</span><a class="mono" href="#" style="color:var(--ink)">Back to top ↑</a></div></footer>
 </body></html>

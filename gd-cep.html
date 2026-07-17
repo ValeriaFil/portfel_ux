@@ -37,8 +37,28 @@ header{position:sticky;top:0;z-index:9;background:var(--cv);border-bottom:1px so
 footer{border-top:1px solid var(--hair);} .ft{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
 @media(max-width:900px){.wrap{padding:0 24px;}.phead{grid-template-columns:1fr;gap:40px;}.gal.c4{grid-template-columns:repeat(2,1fr);}.gal.c3{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:560px){.gal.c2,.gal.c3,.gal.c4{grid-template-columns:1fr;}}
+/* injected-mobile */
+.burger{display:none;}
+@media(max-width:900px){ .polas{justify-content:center;} }
+@media(max-width:760px){
+ .hd nav{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--cv,#FBFBF9);border-bottom:1px solid var(--hair);padding:8px 24px 20px;display:none;z-index:20;}
+ header.nav-open .hd nav{display:flex;}
+ .hd nav a{padding:13px 0;font-size:14px;}
+ .burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:8px;margin:-8px;cursor:pointer;}
+ .burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s;}
+ header.nav-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+ header.nav-open .burger span:nth-child(2){opacity:0;}
+ header.nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+}
+@media(max-width:640px){
+ .chero{aspect-ratio:1/1 !important;}
+ .chero .pmwrap>div{flex-shrink:0 !important;}
+ .chero.chero--four .pmwrap>div{height:56% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(2),.chero.chero--four .pmwrap>div:nth-child(4){height:62% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(3){height:70% !important;}
+}
 </style></head><body>
-<header><div class="hd wrap"><a class="lg" href="graphic-design-preview.html"><span class="mono n">Valeria Filipchyk</span></a><nav><a class="mono" href="graphic-design-preview.html#work" style="color:var(--ink)">Work</a><a class="mono" href="graphic-design-preview.html#about" style="color:var(--ink)">About</a><a class="mono" href="graphic-design-preview.html#contact" style="color:var(--ink)">Contact</a><a class="pill" href="preview.html">UX/UI ↗</a></nav></div></header>
+<header><div class="hd wrap"><a class="lg" href="graphic-design-preview.html"><span class="mono n">Valeria Filipchyk</span></a><button class="burger" aria-label="Menu" aria-expanded="false" onclick="var h=this.closest('header');var o=h.classList.toggle('nav-open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button><nav onclick="this.closest('header').classList.remove('nav-open')"><a class="mono" href="graphic-design-preview.html#work" style="color:var(--ink)">Work</a><a class="mono" href="graphic-design-preview.html#about" style="color:var(--ink)">About</a><a class="mono" href="graphic-design-preview.html#contact" style="color:var(--ink)">Contact</a><a class="pill" href="preview.html">UX/UI ↗</a></nav></div></header>
 <main>
 <section class="section" style="padding:72px 0 0"><div class="wrap"><a class="back mono" href="graphic-design-preview.html" style="color:var(--ink)">← All work</a>
 <div class="phead"><div><p class="eyebrow" style="margin-bottom:22px">Print &amp; identity</p><h1 class="ptitle">CEP<span class="dot">.</span></h1><p class="pdesc">Retail materials for a compression-sportswear store, built on the brand&#x27;s black-and-lime system — an opening flyer, a gift certificate and a product sticker.</p></div>

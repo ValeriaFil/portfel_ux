@@ -75,6 +75,7 @@ export default function LumoControlPage() {
 
             {/* Hero cover — phone trio on warm gradient */}
             <div
+              className="chero chero--four"
               style={{
                 marginTop: 48,
                 position: "relative",
@@ -92,7 +93,7 @@ export default function LumoControlPage() {
                 Set the mood with a tap
               </span>
               <div style={{ position: "absolute", right: 44, top: 34, width: 110, height: 110, borderRadius: 9999, border: "1px solid rgba(3,76,59,.20)", zIndex: 1 }} />
-              <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2 }}>
+              <div className="pmwrap" style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2 }}>
                 {HERO.map((p) => (
                   <div
                     key={p.s}

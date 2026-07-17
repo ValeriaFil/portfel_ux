@@ -9,7 +9,7 @@ const NAV = [
   { label: "Career", href: "/#career", section: "career" },
   { label: "About", href: "/#about", section: "about" },
   { label: "Contact", href: "/#contact", section: "contact" },
-  { label: "Resume", href: "/resume.pdf", external: true },
+  { label: "Resume", href: "/valeria_filipchyk_designer.pdf", external: true },
 ] as const;
 
 /**
@@ -20,6 +20,10 @@ const NAV = [
 export function SiteHeader() {
   const pathname = usePathname();
   const [activeSection, setActiveSection] = React.useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  // Close the mobile menu whenever the route changes.
+  React.useEffect(() => { setMenuOpen(false); }, [pathname]);
 
   // Scroll-spy: on the homepage, highlight whichever section the reader has
   // scrolled into (its top has passed a point ~40% down the viewport).
@@ -82,7 +86,20 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav style={{ display: "flex", gap: 34 }}>
+        <button
+          type="button"
+          className="burger"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((o) => !o)}
+        >
+          <span /><span /><span />
+        </button>
+
+        <nav
+          className={"site-nav" + (menuOpen ? " open" : "")}
+          onClick={() => setMenuOpen(false)}
+        >
           {NAV.map((item) => {
             const active = isActive(item);
             const color = active ? "var(--color-pink-rose)" : "var(--color-ink)";

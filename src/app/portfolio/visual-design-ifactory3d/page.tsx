@@ -136,14 +136,14 @@ export default function IFactory3DPage() {
           <div className="wrap">
             <p style={{ ...kicker, marginBottom: 24 }}>Next project</p>
             <Link
-              href="/portfolio/app-effectify"
+              href="/portfolio/lumocontrol"
               className="np-card"
               style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 24, background: "var(--color-white)", border: "1px solid var(--hair)", padding: 48, textDecoration: "none" }}
             >
               <div>
                 <span className="mono" style={{ color: "var(--color-green)" }}>App concept</span>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: "clamp(28px, 3.4vw, 44px)", lineHeight: 1.05, color: "var(--color-ink)", marginTop: 10 }}>
-                  App «Effectify»
+                  LumoControl
                 </p>
               </div>
               <span aria-hidden="true" style={{ fontFamily: "var(--font-mono)", fontSize: 26, color: "var(--color-pink-rose)", lineHeight: 1 }}>↗</span>

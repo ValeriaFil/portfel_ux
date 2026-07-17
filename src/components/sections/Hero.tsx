@@ -32,7 +32,7 @@ export function Hero() {
               I&rsquo;m Valeria
             </span>
             <span style={{ fontSize: "clamp(36px, 8vw, 68px)", lineHeight: 1.0, fontWeight: 600 }}>
-              UX/UI designer
+              UI/UX designer
             </span>
             <span style={{ fontSize: "clamp(36px, 8vw, 68px)", lineHeight: 1.0, fontWeight: 600 }}>
               <span style={{ color: "var(--color-green)" }}>making products intuitive</span>
@@ -49,9 +49,8 @@ export function Hero() {
               marginTop: 32,
             }}
           >
-            Focused on clarity and structure, with a background in Graphic Design
-            and 6 years of experience &mdash; building product interfaces that value
-            collaboration, design maturity and a user-centered approach.
+            With a background in Graphic Design and 6 years of experience
+            designing clear, user-centered interfaces.
           </p>
         </div>
 

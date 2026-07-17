@@ -210,6 +210,7 @@ export default function IntentionalMatchingPage() {
             <p className="mono" style={{ marginTop: 16 }}>Dating app feature</p>
 
             <div
+              className="chero"
               style={{
                 marginTop: 48,
                 position: "relative",
@@ -228,7 +229,7 @@ export default function IntentionalMatchingPage() {
                 Match → Conversation
               </span>
               <div style={{ position: "absolute", right: 44, top: 34, width: 110, height: 110, borderRadius: 9999, border: "1px solid rgba(218,34,85,.26)", zIndex: 1 }} />
-              <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2 }}>
+              <div className="pmwrap" style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2 }}>
                 {[
                   { s: "zG5Rnfh08n9c1aM44OV22friGE.png", h: "74%", r: 30, rot: "rotate(-7deg)", mr: -26, ml: 0, sh: "0 22px 50px rgba(3,76,59,.16)", z: 1 },
                   { s: "FDYCKhiXQS8G40RCYXiOVrdDc.png", h: "90%", r: 34, rot: "none", mr: 0, ml: 0, sh: "0 30px 66px rgba(3,76,59,.22)", z: 3 },

@@ -40,7 +40,7 @@ export function About() {
             className="statement"
             style={{ fontSize: "clamp(28px, 3vw, 40px)", lineHeight: 1.15 }}
           >
-            Design isn&rsquo;t just visuals &mdash;<br />
+            For me, design isn&rsquo;t just visuals &mdash;<br />
             it&rsquo;s{" "}
             <span style={{ color: "var(--color-green)" }}>functionality, logic</span> and{" "}
             <span style={{ color: "var(--color-green)" }}>accessibility</span>
@@ -124,7 +124,7 @@ export function About() {
           doesn&rsquo;t come with deadlines:
         </p>
 
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 28, marginTop: 44 }}>
+        <div className="polaroid-gallery" style={{ display: "flex", flexWrap: "wrap", gap: 28, marginTop: 44 }}>
           {POLAROIDS.map((p) => (
             <div
               key={p.cap}
@@ -147,13 +147,15 @@ export function About() {
               </div>
               <div
                 style={{
-                  fontFamily: "'Caveat', cursive",
-                  fontWeight: 600,
-                  fontSize: 27,
+                  fontFamily: "var(--font-mono)",
+                  fontWeight: 500,
+                  fontSize: 13,
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
                   lineHeight: 1,
                   textAlign: "center",
                   color: "var(--color-ink)",
-                  padding: "14px 0 18px",
+                  padding: "16px 0 18px",
                 }}
               >
                 {p.cap}

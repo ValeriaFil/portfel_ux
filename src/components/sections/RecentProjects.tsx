@@ -11,18 +11,18 @@ const PROJECTS = [
     href: "/portfolio/intentional-matching",
   },
   {
-    title: "Web platform «ABBA»",
-    meta: "Web platform",
-    image: "https://framerusercontent.com/images/MnI3hWwR83gz6wTwCbGGC1ts1U.png",
-    tint: "#fff",
-    href: "/portfolio/web-platform-abba",
-  },
-  {
     title: "Woodland Cards",
     meta: "Mobile card game",
     image: "/assets/img/wc-thumb.png",
     tint: "#fff",
     href: "/portfolio/woodland-cards",
+  },
+  {
+    title: "Web platform «ABBA»",
+    meta: "Web platform",
+    image: "https://framerusercontent.com/images/MnI3hWwR83gz6wTwCbGGC1ts1U.png",
+    tint: "#fff",
+    href: "/portfolio/web-platform-abba",
   },
   {
     title: "Booking app «MovieNest»",

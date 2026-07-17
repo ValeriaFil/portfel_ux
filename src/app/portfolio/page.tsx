@@ -19,16 +19,16 @@ const UXUI = [
     href: "/portfolio/intentional-matching",
   },
   {
-    title: "Web platform «ABBA»",
-    meta: "Web platform",
-    image: IMG + "MnI3hWwR83gz6wTwCbGGC1ts1U.png",
-    href: "/portfolio/web-platform-abba",
-  },
-  {
     title: "Woodland Cards",
     meta: "Mobile card game",
     image: "/assets/img/wc-thumb.png",
     href: "/portfolio/woodland-cards",
+  },
+  {
+    title: "Web platform «ABBA»",
+    meta: "Web platform",
+    image: IMG + "MnI3hWwR83gz6wTwCbGGC1ts1U.png",
+    href: "/portfolio/web-platform-abba",
   },
   {
     title: "Booking app «MovieNest»",
@@ -56,12 +56,6 @@ const OTHER = [
       IMG + "Sd0EMkJvJIFs0cpK2K9Tjt6SYM.png",
     ],
     href: "/portfolio/lumocontrol",
-  },
-  {
-    title: "App «Effectify»",
-    meta: "App",
-    image: IMG + "wq9nch28LaoDFWOWl5IWStSHM.png",
-    href: "/portfolio/app-effectify",
   },
   {
     title: "Visual Design for «iFactory 3D»",

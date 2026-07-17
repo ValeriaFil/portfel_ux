@@ -204,7 +204,7 @@ export default function AbbaPage() {
               <div style={{ position: "absolute", right: 44, top: 36, width: 110, height: 110, borderRadius: 9999, border: "1px solid rgba(3,76,59,.20)", zIndex: 1 }} />
               <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", padding: "56px 48px", zIndex: 2 }}>
                 <img
-                  src={IMG + "B5zLgDB8y80bcg45ImPu05oUMk.jpg"}
+                  src="/assets/img/abba-main.png"
                   alt="Web platform «ABBA» — cover"
                   style={{ maxWidth: "82%", maxHeight: "88%", objectFit: "contain", borderRadius: 10, filter: "drop-shadow(0 28px 58px rgba(3,76,59,.20))" }}
                 />

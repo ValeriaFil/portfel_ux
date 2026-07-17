@@ -48,8 +48,28 @@ html{scroll-behavior:smooth;} section[id]{scroll-margin-top:84px;} .reveal{opaci
 @media(max-width:960px){.pg{grid-template-columns:1fr 1fr;}}
 @media(max-width:900px){.wrap{padding:0 24px;}.hero,.grid2{grid-template-columns:1fr!important;gap:48px!important;}.crow{grid-template-columns:1fr!important;gap:24px!important;}}
 @media(max-width:560px){.pg{grid-template-columns:1fr;}}
+/* injected-mobile */
+.burger{display:none;}
+@media(max-width:900px){ .polas{justify-content:center;} }
+@media(max-width:760px){
+ .hd nav{position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--cv,#FBFBF9);border-bottom:1px solid var(--hair);padding:8px 24px 20px;display:none;z-index:20;}
+ header.nav-open .hd nav{display:flex;}
+ .hd nav a{padding:13px 0;font-size:14px;}
+ .burger{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:8px;margin:-8px;cursor:pointer;}
+ .burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s;}
+ header.nav-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+ header.nav-open .burger span:nth-child(2){opacity:0;}
+ header.nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+}
+@media(max-width:640px){
+ .chero{aspect-ratio:1/1 !important;}
+ .chero .pmwrap>div{flex-shrink:0 !important;}
+ .chero.chero--four .pmwrap>div{height:56% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(2),.chero.chero--four .pmwrap>div:nth-child(4){height:62% !important;}
+ .chero.chero--four .pmwrap>div:nth-child(3){height:70% !important;}
+}
 </style></head><body>
-<header><div class="hd wrap"><a class="lg" href="#top"><span class="mono n">Valeria Filipchyk</span></a><nav><a class="mono" href="#work" style="color:var(--ink)">Work</a><a class="mono" href="#career" style="color:var(--ink)">Career</a><a class="mono" href="#about" style="color:var(--ink)">About</a><a class="mono" href="#contact" style="color:var(--ink)">Contact</a><a class="mono" href="Valeria_Filipchyk_Graphic_Designer_Resume.pdf" target="_blank" style="color:var(--ink)">Resume</a><a class="pill" href="preview.html">UX/UI ↗</a></nav></div></header>
+<header><div class="hd wrap"><a class="lg" href="#top"><span class="mono n">Valeria Filipchyk</span></a><button class="burger" aria-label="Menu" aria-expanded="false" onclick="var h=this.closest('header');var o=h.classList.toggle('nav-open');this.setAttribute('aria-expanded',o)"><span></span><span></span><span></span></button><nav onclick="this.closest('header').classList.remove('nav-open')"><a class="mono" href="#work" style="color:var(--ink)">Work</a><a class="mono" href="#career" style="color:var(--ink)">Career</a><a class="mono" href="#about" style="color:var(--ink)">About</a><a class="mono" href="#contact" style="color:var(--ink)">Contact</a><a class="mono" href="Valeria_Filipchyk_Graphic_Designer_Resume.pdf" target="_blank" style="color:var(--ink)">Resume</a><a class="pill" href="preview.html">UX/UI ↗</a></nav></div></header>
 <main>
 <section id="top" class="section" style="padding-top:88px"><div class="wrap hero"><div><h1 class="statement" style="display:flex;flex-direction:column;gap:4px;max-width:560px"><span style="font-size:clamp(28px,6vw,40px);line-height:1.05;margin-bottom:16px">I'm Valeria</span><span style="font-size:clamp(36px,8vw,68px);line-height:1.0;font-weight:600">Graphic Designer</span><span style="font-size:clamp(36px,8vw,68px);line-height:1.0;font-weight:600"><span style="color:var(--green)">crafting brands that connect</span><span style="color:var(--rose)">.</span></span></h1><p class="intro">Graphic &amp; web designer with 6 years of experience across print, branding and digital campaigns — from flyers, posters and packaging to social creatives and outdoor advertising. I pair analytical thinking with a strong visual eye to help brands communicate clearly.</p></div><div><p class="eyebrow" style="margin-bottom:20px">Experience</p><div class="tl"><span class="mono">2022 →</span><span class="co">N1 Partners</span><span class="ro">UI / Visual Designer</span></div><div class="tl"><span class="mono">2021</span><span class="co">iFactory3D</span><span class="ro">Web &amp; Visual Designer</span></div><div class="tl"><span class="mono">2019</span><span class="co">Unisail</span><span class="ro">Graphic Designer</span></div></div></div></section>
 
