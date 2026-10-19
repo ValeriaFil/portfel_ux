@@ -20,7 +20,7 @@ export function SiteFooter() {
         <span className="mono" style={{ color: "var(--color-ink)" }}>
           Valeria Filipchyk
         </span>
-        <span className="mono">© 2026 — UI/UX Designer</span>
+        <span className="mono">© 2026 — UI Designer</span>
         <a href="#top" className="mono" style={{ color: "var(--color-ink)" }}>
           Back to top ↑
         </a>

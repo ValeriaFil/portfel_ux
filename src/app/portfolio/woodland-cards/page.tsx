@@ -168,8 +168,8 @@ export default function WoodlandCardsPage() {
                 </div>
               </div>
               <div style={{ display: "flex", justifyContent: "center", gap: 18 }}>
-                <img src={IMG + "wc-fox.png"} alt="Fox card" style={{ width: "100%", maxWidth: 220, filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
-                <img src={IMG + "wc-wolf.png"} alt="Wolf card" style={{ width: "100%", maxWidth: 220, filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
+                <img src={IMG + "wc-fox.png"} alt="Fox card" style={{ width: "47%", maxWidth: 220, minWidth: 0, height: "auto", filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
+                <img src={IMG + "wc-wolf.png"} alt="Wolf card" style={{ width: "47%", maxWidth: 220, minWidth: 0, height: "auto", filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
               </div>
             </div>
           </div>
@@ -232,8 +232,8 @@ export default function WoodlandCardsPage() {
                 <p style={{ ...body, marginTop: 18 }}>This made Action Cards an intentional strategic resource rather than a random bonus.</p>
               </div>
               <div style={{ display: "flex", justifyContent: "center", gap: 20 }}>
-                <img src={IMG + "wc-strongwind.png"} alt="Strong Wind action card" style={{ width: "100%", maxWidth: 215, filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
-                <img src={IMG + "wc-heavyrain.png"} alt="Heavy Rain action card" style={{ width: "100%", maxWidth: 215, filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
+                <img src={IMG + "wc-strongwind.png"} alt="Strong Wind action card" style={{ width: "47%", maxWidth: 215, minWidth: 0, height: "auto", filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
+                <img src={IMG + "wc-heavyrain.png"} alt="Heavy Rain action card" style={{ width: "47%", maxWidth: 215, minWidth: 0, height: "auto", filter: "drop-shadow(0 18px 40px rgba(3,76,59,.22))" }} />
               </div>
             </div>
             <div className="cs-3" style={{ ...grid3, gap: 20, marginTop: 44 }}>

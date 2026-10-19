@@ -103,6 +103,15 @@ section[id] { scroll-margin-top: 84px; }
 .statement .accent { color: var(--color-green); font-style: italic; font-weight: 500; }
 .statement .dot { color: var(--color-pink-rose); }
 
+/* Mobile hero: larger heading + tagline, smaller photo for balance */
+@media (max-width: 600px) {
+  .hero-role { font-size: clamp(34px, 9vw, 46px) !important; white-space: normal !important; }
+  .hero-making { font-size: clamp(34px, 9vw, 46px) !important; gap: 18px !important; }
+  .hero-ph { width: 116px !important; height: 116px !important; }
+  .hero-polaroid { padding: 8px 8px 0 !important; }
+  .hero-cap { font-size: 10px !important; letter-spacing: .04em !important; padding: 10px 0 11px !important; }
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .wrap { padding-inline: 24px; }
